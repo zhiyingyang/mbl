@@ -1,0 +1,277 @@
+<div class="row addppWrap">
+	 <div class="row addpp">
+	   <p class="addppTop">添加新品牌</p>
+	   <div class="addppBottom">
+	 <p><span><i>*</i>品牌名称：</span><input type="text"></p>
+	 <p><span>品牌首字母：</span><input type="text"></p>
+	 <p>
+	 	<span><i>*</i> 品牌LOGO：</span>
+		<a href="javascript:;" class="a-upload">
+			<input type="file" name="myFile" class="myFile" multiple="multiple" />上传图片
+		</a>
+		<span class="img_div img_div3">
+		</span>
+		<div class="shade" onclick="javascript:closeShade()">
+			<div class="">
+				<span class="text_span">
+				</span>
+			</div>
+		</div>
+		<div class="shadeImg" onclick="javascript:closeShadeImg()">
+			<div class="">
+				<img class="showImg" src=""/>
+			</div>
+		</div>
+	 </p>
+	 <p>
+	 	<span><i>*</i> 品牌专区大图：</span>
+		<a href="javascript:;" class="a-upload">
+			<input type="file" name="myFile2" class="myFile2" multiple="multiple" />上传图片
+		</a>
+		<span class="img_div img_div2">
+		</span>
+		<!--<div class="shade2" onclick="javascript:closeShade2()">
+			<div class="">
+				<span class="text_span">
+				</span>
+			</div>
+		</div>-->
+		<!--<div class="shadeImg2" onclick="javascript:closeShadeImg2()">
+			<div class="">
+				<img class="showImg2" src=""/>
+			</div>
+		</div>-->
+	 </p>
+	 <p><span>品牌故事：</span><textarea></textarea></p>
+	 <p><span>排序：</span><input type="text"></p>
+	 <p>
+	   <span>是否显示：</span>
+	   <span class="button-holder">
+		 <input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-1"></label>
+		 <span class="shifou shifouF">否</span>
+		 <input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label>
+		 <span class="shifou">是</span>
+	   </span>
+	 </p>
+	 <p class="sfxsTips">当品牌下还没有商品的时候，分类页的品牌区将不会显示该品牌</p>
+	 <p>
+	   <span>品牌制造商：</span>
+	   <span class="button-holder">
+	 	 <input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-1"></label>
+		 <span class="shifou shifouF">否</span>
+		 <input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label>
+		 <span class="shifou">是</span>
+	   </span>
+	 </p>
+	 <button ui-sref="pplb" ui-sref-active="pplb">提交</button>
+	   </div>
+	 </div>
+</div>
+<script>
+	$(function() {
+	var objUrl;
+	var img_html;
+	$(".myFile").change(function() {
+	var img_div = $(".img_div3");
+	var filepath = $("input[name='myFile']").val();
+	for(var i = 0; i < this.files.length; i++) {
+		objUrl = getObjectURL(this.files[i]);
+		var extStart = filepath.lastIndexOf(".");
+		var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+		/*
+		 作者：z@qq.com
+    	时间：2016-12-10
+    	描述：鉴定每个图片上传尾椎限制
+ 		* */
+		if(ext != ".BMP" && ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+			$(".shade").fadeIn(500);
+			$(".text_span").text("图片限于bmp,png,gif,jpeg,jpg格式");
+			this.value = "";
+			$(".img_div").html("");
+			return false;
+		} else {
+			/*
+			 若规则全部通过则在此提交url到后台数据库
+			 * */
+			img_html = "<div class='isImg'><img src='" + objUrl + "' onclick='javascript:lookBigImg(this)' style='height: 100%; width: 100%;' /><button class='removeBtn' onclick='javascript:removeImg(this)'>x</button></div>";
+			img_div.append(img_html);
+		}
+	}
+	/*
+	 作者：z@qq.com
+	时间：2016-12-10
+	描述：鉴定每个图片大小总和
+ 	* */
+	var file_size = 0;
+	var all_size = 0;
+	for(j = 0; j < this.files.length; j++) {
+		file_size = this.files[j].size;
+		all_size = all_size + this.files[j].size;
+		var size = all_size / 1024;
+		if(size > 500) {
+			$(".shade").fadeIn(500);
+			$(".text_span").text("上传的图片大小不能超过100k！");
+			this.value = "";
+			$(".img_div").html("");
+			return false;
+		}
+	}
+	return true;
+});
+
+/*
+ 作者：z@qq.com
+时间：2016-12-10
+描述：鉴定每个浏览器上传图片url 目前没有合并到Ie
+ * */
+function getObjectURL(file) {
+	var url = null;
+	if(window.createObjectURL != undefined) { // basic
+		url = window.createObjectURL(file);
+	} else if(window.URL != undefined) { // mozilla(firefox)
+		url = window.URL.createObjectURL(file);
+	} else if(window.webkitURL != undefined) { // webkit or chrome
+		url = window.webkitURL.createObjectURL(file);
+	}
+	//console.log(url);
+	return url;
+}
+});
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带删除 再次地方可以加上一个ajax进行提交到后台进行删除
+ * */
+function removeImg(r){
+	$(r).parent().remove();
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带放大查看处理
+ * */
+function lookBigImg(b){
+	$(".shadeImg").fadeIn(500);
+	$(".showImg").attr("src",$(b).attr("src"))
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShade(){
+	$(".shade").fadeOut(500);
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShadeImg(){
+	$(".shadeImg").fadeOut(500);
+}
+</script>
+<script>
+	$(function() {
+	var objUrl;
+	var img_html;
+	$(".myFile2").change(function() {
+	var img_div2 = $(".img_div2");
+	var filepath = $("input[name='myFile2']").val();
+	for(var i = 0; i < this.files.length; i++) {
+		objUrl = getObjectURL(this.files[i]);
+		var extStart = filepath.lastIndexOf(".");
+		var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+		/*
+		 作者：z@qq.com
+    	时间：2016-12-10
+    	描述：鉴定每个图片上传尾椎限制
+ 		* */
+		if(ext != ".BMP" && ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+			$(".shade2").fadeIn(500);
+			$(".text_span2").text("图片限于bmp,png,gif,jpeg,jpg格式");
+			this.value = "";
+			$(".img_div2").html("");
+			return false;
+		} else {
+			/*
+			 若规则全部通过则在此提交url到后台数据库
+			 * */
+			img_html = "<div class='isImg'><img src='" + objUrl + "' onclick='javascript:lookBigImg(this)' style='height: 100%; width: 100%;' /><button class='removeBtn' onclick='javascript:removeImg(this)'>x</button></div>";
+			img_div2.append(img_html);
+		}
+	}
+	/*
+	 作者：z@qq.com
+	时间：2016-12-10
+	描述：鉴定每个图片大小总和
+ 	* */
+	var file_size = 0;
+	var all_size = 0;
+	for(j = 0; j < this.files.length; j++) {
+		file_size = this.files[j].size;
+		all_size = all_size + this.files[j].size;
+		var size = all_size / 1024;
+		if(size > 500) {
+			$(".shade").fadeIn(500);
+			$(".text_span").text("上传的图片大小不能超过100k！");
+			this.value = "";
+			$(".img_div2").html("");
+			return false;
+		}
+	}
+	return true;
+});
+
+/*
+ 作者：z@qq.com
+时间：2016-12-10
+描述：鉴定每个浏览器上传图片url 目前没有合并到Ie
+ * */
+function getObjectURL(file) {
+	var url = null;
+	if(window.createObjectURL != undefined) { // basic
+		url = window.createObjectURL(file);
+	} else if(window.URL != undefined) { // mozilla(firefox)
+		url = window.URL.createObjectURL(file);
+	} else if(window.webkitURL != undefined) { // webkit or chrome
+		url = window.webkitURL.createObjectURL(file);
+	}
+	//console.log(url);
+	return url;
+}
+});
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带删除 再次地方可以加上一个ajax进行提交到后台进行删除
+ * */
+function removeImg(r){
+	$(r).parent().remove();
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带放大查看处理
+ * */
+function lookBigImg(b){
+	$(".shadeImg").fadeIn(500);
+	$(".showImg").attr("src",$(b).attr("src"))
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShade2(){
+	$(".shade").fadeOut(500);
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShadeImg(){
+	$(".shadeImg").fadeOut(500);
+}
+</script>

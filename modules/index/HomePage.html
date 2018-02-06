@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美邦来</title>
+  </head> 
+  <body>
+  <div class="row homePageWrap">
+     <div class="homePageOne">
+        <ul>
+          <li>
+            <img src="../images/jrda.png">
+            <span class="titletext">今日订单数</span>
+            <span>200</span>
+          </li>
+          <li>
+            <img src="../images/xsze.png">
+            <span class="titletext">今日销售总额</span>
+            <span>￥5000.00</span>
+          </li>
+          <li>
+            <img src="../images/zrxsze.png">
+            <span class="titletext">昨日销售总额</span>
+            <span>￥5000.00</span>
+          </li>
+          <li>
+            <img src="../images/jqtxsze.png">
+            <span class="titletext">近7天销售总额</span>
+            <span>￥5000.00</span>
+          </li>
+        </ul>
+     </div>
+     <div class="homePageTwo">
+        <p class="dclsw">待处理事物</p>
+        <ul>
+          <li>
+            <span class="left">待付款订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">已完成订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">待确认退货订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">待发货订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">新缺货登记</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">待处理退款申请</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">已发货订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">待处理退货订单</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+          <li>
+            <span class="left">广告位即将到期</span>
+            <span class="right">(<i>10</i>)</span>
+          </li>
+        </ul>
+     </div>
+     <div class="homePageThree">
+        <p class="dclsw">运营快捷入口</p>
+        <ul>
+          <li class="tjsphome" ui-sref="tjsphome" ui-sref-active="tjsphome">
+           <img src="../images/tjsp.png">
+           <span class="tjsphome" ui-sref="tjsphome" ui-sref-active="tjsphome">添加商品</span>
+          </li>
+          <li class="ddlbhome" ui-sref="ddlbhome" ui-sref-active="ddlbhome">
+            <img src="../images/ddlist.png">
+            <span>订单列表</span>
+          </li>
+          <li class="ggglhome" ui-sref="ggglhome" ui-sref-active="ggglhome">
+            <img src="../images/gggl.png">
+            <span>广告管理</span>
+          </li>
+        </ul>
+     </div>
+     <div class="homePageFour">
+        <p class="dclsw">商品总览</p>
+        <ul>
+          <li>
+           <span>100</span>
+           <span>已下架</span>
+          </li>
+          <li>
+            <span>400</span>
+            <span>已上架</span>
+          </li>
+          <li>
+            <span>50</span>
+            <span>库存紧张</span>
+          </li>
+          <li>
+            <span>500</span>
+            <span>全部商品</span>
+          </li>
+        </ul>
+     </div>
+     <div class="homePageFive">
+        <p class="dclsw">订单统计</p>
+        <div class="homePageFiveLeft">
+          <p class="FiveLeftTop">
+            <span>本月订单总数</span>
+            <span>1000</span>
+            <span class="zzbl"><i>10%</i>同比上周</span>
+          </p>
+          <p class="FiveLeftTop FiveLeftbottom">
+            <span>本周订单数量</span>
+            <span>1000</span>
+            <span class="zzbl"><i>10%</i>同比上周</span>
+          </p>
+        </div>
+        <div class="homePageFiveRight">
+          <div id="container" style="width: 86%; height: 100%; margin: 0 auto"></div>
+        </div>
+     </div>
+     <div class="homePageFive">
+        <p class="dclsw">销售统计</p>
+        <div class="homePageFiveLeft">
+          <p class="FiveLeftTop">
+            <span>本月销售总额</span>
+            <span>1000</span>
+            <span class="zzbl"><i>10%</i>同比上周</span>
+          </p>
+          <p class="FiveLeftTop FiveLeftbottom">
+            <span>本周销售总额</span>
+            <span>1000</span>
+            <span class="zzbl"><i>10%</i>同比上周</span>
+          </p>
+        </div>
+        <div class="homePageFiveRight">
+          <div id="container2" style="width: 86%; height: 100%; margin: 0 auto"></div>
+        </div>
+     </div>
+  </div>
+  </body>
+</html>
+
+<script language="JavaScript">
+$(document).ready(function() {
+   var title = {
+       text: '近一周订单统计'   
+   };
+   var xAxis = {
+       categories: ['07-01周六', '07-02周日', '07-03周一', '07-04周二', '07-05周三', '07-06周四'
+              ,'07-06周五']
+   };
+   var yAxis = {
+      title: {
+         text: '订单数量'
+      },
+      plotLines: [{
+         value: 0,
+         width: 1,
+         color: '#808080'
+      }]
+   };   
+
+   var tooltip = {
+      valueSuffix: '\xB0C'
+   }
+
+   var legend = {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle',
+      borderWidth: 0
+   };
+
+   var series =  [
+      {
+         name: 'Tokyo',
+         data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2]
+      }
+   ];
+
+   var json = {};
+
+   json.title = title;
+   json.xAxis = xAxis;
+   json.yAxis = yAxis;
+   json.tooltip = tooltip;
+   json.legend = legend;
+   json.series = series;
+
+   $('#container').highcharts(json);
+     var title = {
+       text: '近一周销售统计'   
+   };
+   var subtitle = {
+        text: 'Source: runoob.com'
+   };
+   var xAxis = {
+       categories: ['07-01周六', '07-02周日', '07-03周一', '07-04周二', '07-05周三', '07-06周四'
+              ,'07-06周五']
+   };
+   var yAxis = {
+      title: {
+         text: '销售额'
+      },
+      plotLines: [{
+         value: 0,
+         width: 1,
+         color: '#808080'
+      }]
+   };   
+
+   var tooltip = {
+      valueSuffix: '\xB0C'
+   }
+
+   var legend = {
+      layout: 'vertical',
+      align: 'right',
+      verticalAlign: 'middle',
+      borderWidth: 0
+   };
+
+   var series =  [
+      {
+         name: 'Tokyo',
+         data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2,
+            26.5, 23.3, 18.3, 13.9, 9.6]
+      }
+   ];
+
+   var json = {};
+
+   json.title = title;
+   json.subtitle = subtitle;
+   json.xAxis = xAxis;
+   json.yAxis = yAxis;
+   json.tooltip = tooltip;
+   json.legend = legend;
+   json.series = series;
+
+   $('#container2').highcharts(json);
+});
+</script>

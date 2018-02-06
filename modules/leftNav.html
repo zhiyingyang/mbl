@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美邦来</title>
+    <link href="../css/reset.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/leftNav.css" rel="stylesheet">
+    <link href="../css/shoppin.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../dist/css/wangEditor.min.css">
+  </head>
+  <body ng-app="myApp">
+  <div class="row leftNavWrapOne">
+    <div class="col-md-3" style="height: 100%;">
+      <div class="col-md-5 leftNavOne">
+        <div>logo</div>
+        <ul>
+          <li><img src="../images/shouye.png"><span>首页</span></li>
+          <li><img src="../images/shouye.png"><span>信息</span></li>
+          <li><img src="../images/shouye.png"><span>商铺</span></li>
+          <li><img src="../images/shangpin.png"><span>商品</span></li>
+          <li><img src="../images/dingdan.png"><span>订单</span></li>
+          <li><img src="../images/shangpin.png"><span>纠纷</span></li>
+          <li><img src="../images/zhaopin.png"><span>招聘</span></li>
+          <li><img src="../images/cuxiao.png"><span>促销</span></li>
+          <li><img src="../images/shezhi.png"><span>设置</span></li>
+        </ul>
+        <ul class="leftNavOneBottom">
+          <li class="admin">
+            <img src="../images/admin.png">
+            <span>admin</span>
+          </li>
+          <li class="message">
+            <img src="../images/xiaoxi.png">
+            <span>50</span>
+          </li>
+          <li>
+            <img src="../images/tuichu.png">
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-7 leftNavTwo">
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">系统首页</div>
+          <ul>
+            <li class="xtsy" ui-sref="xtsy" ui-sref-active="xtsy">• 系统首页</li>
+            <li class="zhszindex" ui-sref="zhszindex" ui-sref-active="zhszindex">• 账户设置</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">信息管理</div>
+          <ul>
+            <li class="xxlb" ui-sref="xxlb" ui-sref-active="xxlb">• 信息列表</li>
+            <li class="xxfb" ui-sref="xxfb" ui-sref-active="xxfb">• 信息发布</li>
+            <li class="cgx" ui-sref="cgx" ui-sref-active="cgx">• 草稿箱</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">商铺管理</div>
+          <ul>
+            <li class="spxx" ui-sref="spxx" ui-sref-active="spxx">• 商铺信息</li>
+            <li class="gggl" ui-sref="gggl" ui-sref-active="gggl">• 广告管理</li>
+            <li class="srtx" ui-sref="srtx" ui-sref-active="srtx">• 收入提现</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">商品管理</div>
+          <ul>
+            <li class="splb" ui-sref="splb" ui-sref-active="splb">• 商品列表</li>
+            <li class="addsp" ui-sref="addsp" ui-sref-active="addsp">• 添加商品</li>
+            <li class="spcgx" ui-sref="spcgx" ui-sref-active="spcgx">• 商品草稿箱</li>
+            <li class="sppj" ui-sref="sppj" ui-sref-active="sppj">• 商品评价</li>
+          </ul>
+          <div class="leftNavTwoTop">品牌管理</div>
+          <ul>
+            <li class="pplb" ui-sref="pplb" ui-sref-active="pplb">• 品牌列表</li>
+            <li class="addpp" ui-sref="addpp" ui-sref-active="addpp">• 添加品牌</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">订单管理</div>
+          <ul>
+            <li class="ddlb" ui-sref="ddlb" ui-sref-active="ddlb">• 订单列表</li>
+            <li class="qrsh" ui-sref="qrsh" ui-sref-active="qrsh">• 确认收货</li>
+            <li class="dhtx" ui-sref="dhtx" ui-sref-active="dhtx">• 到货提醒</li>
+            <li class="ddsz" ui-sref="ddsz" ui-sref-active="ddsz">• 订单设置</li> 
+          </ul>
+          <div class="leftNavTwoTop">退款及退货</div>
+          <ul>
+            <li class="thsqcl" ui-sref="thsqcl" ui-sref-active="thsqcl">• 退货申请处理</li>
+            <li class="tksqcl" ui-sref="tksqcl" ui-sref-active="tksqcl">• 退款申请处理</li>
+            <li class="tkyy" ui-sref="tkyy" ui-sref-active="tkyy">• 退货原因设置</li>
+          </ul>
+          <div class="leftNavTwoTop">快递单管理</div>
+          <ul>
+             <li class="kdmbd" ui-sref="kdmbd" ui-sref-active="kdmbd">• 快递单模板</li> 
+            <li class="zdydyx" ui-sref="zdydyx" ui-sref-active="zdydyx">• 自定义打印项</li>
+            <li class="fhdxxgl" ui-sref="fhdxxgl" ui-sref-active="fhdxxgl">• 发货点信息管理</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">纠纷管理</div>
+          <ul>
+            <li class="jflb" ui-sref="jflb" ui-sref-active="jflb">• 纠纷列表</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">其它查询</div>
+          <ul>
+            <li class="zplb" ui-sref="zplb" ui-sref-active="zplb">• 招聘列表</li>
+            <li class="zpfb" ui-sref="zpfb" ui-sref-active="zpfb">• 招聘发布</li>
+            <li class="jllb" ui-sref="jllb" ui-sref-active="jllb">• 简历列表</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <!-- <div class="leftNavTwoTop">促销方案</div>
+          <ul>
+            <li class="hdlb">• 活动列表</li>
+            <li class="lbtsz">• 轮播图设置</li>
+          </ul> -->
+        <div class="leftNavTwoTop">优惠券管理</div>
+          <ul>
+            <li class="yhqlb" ui-sref="yhqlb" ui-sref-active="yhqlb">• 优惠券列表</li>
+            <li class="tjyhq" ui-sref="tjyhq" ui-sref-active="tjyhq">• 添加优惠券</li>
+            <li class="yhqfs" ui-sref="yhqfs" ui-sref-active="yhqfs">• 优惠券发送</li>
+          </ul>
+        </div>
+        <div class="leftNavTwoList">
+          <div class="leftNavTwoTop">支付配送</div>
+          <ul>
+            <!-- <li class="jysz">• 交易设置</li> -->
+            <li class="yfmb" ui-sref="yfmb" ui-sref-active="yfmb">• 运费模板</li>
+             <li class="wlgs" ui-sref="wlgs" ui-sref-active="wlgs">• 物流公司</li> 
+            <li class="zhsz" ui-sref="zhsz" ui-sref-active="zhsz">• 支付设置</li>
+            <li class="bannersz" ui-sref="bannersz" ui-sref-active="bannersz">• Banner设置</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9 rightNavWrap">
+        <div class="col-md-12 rightNav"><i></i><span>系统首页</span></div>
+        <div class="col-md-12 rightContent">
+          <ui-view></ui-view>
+        </div>
+      </div>
+    <!-- 左侧显示 -->
+    <div class="adminLeft">
+       <div class="adminLeftTop">
+         <span class="left">账户信息</span>
+         <span class="right">账户设置</span>
+       </div>
+       <ul>
+         <li><span>所在部门：</span>销售部</li>
+         <li><span>本次登录：</span>2017-09-09　14:25:21</li>
+         <li><span>登录地区：</span>广东省深圳市(IP:183.14.135.1)</li>
+         <li><span>上次登录：</span>2017-09-09　14:25:21</li>
+       </ul>
+    </div>
+    <div class="messageLeft">
+       <p>订单提示</p>
+       <ul>
+         <li>
+          <span class="left">待付款订单</span>
+          <span class="right">(<i>10</i>)</span>
+         </li>
+         <li>
+          <span class="left">待发货订单</span>
+          <span class="right">(<i>10</i>)</span>
+         </li>
+         <li>
+          <span class="left">已发货订单</span>
+          <span class="right">(<i>10</i>)</span>
+         </li>
+         <li>
+          <span class="left">已完成订单</span>
+          <span class="right">(<i>10</i>)</span>
+        </li>
+       </ul>
+       <p>广告位提示</p>
+       <ul>
+         <li>
+          <span class="left">广告位即将到期</span>
+          <span class="right">(<i>10</i>)</span>
+         </li>
+       </ul>
+    </div>
+  </div>
+  </body>
+</html>
+<script src="../js/jquery-3.0.0.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/angular.min.js"></script>
+<script src="../js/angular-ui-router.min.js"></script>
+<script src="../js/app.js"></script>
+<script src="../js/leftNav.js"></script>
+<script src="../js/highcharts.js"></script>
+<script src="shangpin/shopProductList.js"></script>
+<script type="text/javascript" src="../dist/js/wangEditor.js"></script>

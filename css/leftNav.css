@@ -1,0 +1,390 @@
+html{font-size: 250%;}
+/*40px=1rem*/
+@media (min-height:650px) {
+html { font-size: 250%}
+}
+@media (min-height:650px) and (max-height:800px){
+    html { font-size:  280%}
+}
+@media (min-height:800px) and (max-height:950px){
+    html { font-size: 300%}
+}
+@media (min-height:950px){
+    html { font-size: 320%}
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+	padding-left: 0;
+	padding-right: 0;
+}
+.row{
+	margin-right: 0;
+	margin-left: 0;
+}
+body{
+	background: #F9F9F9;
+	overflow-x: hidden;
+}
+.leftNavWrapOne{
+	height: 100%;
+	overflow-y: hidden;
+	zoom:1;
+}
+.loginWrap{
+	height: 100%;
+	overflow-y: hidden;
+	zoom:1;
+	background: #3498DB;
+}
+.leftNavOne{
+	height: 100%;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+}
+.leftNavOne li{
+	position: relative;
+	font-size: 16px;
+	line-height: 1rem;
+	cursor: pointer;
+}
+.leftNavOne li img{
+	display: inline-block;
+	width: 0.4rem;
+	margin-right:0.25rem;
+}
+.leftNavOne li span{
+	display: inline-block;
+	vertical-align: middle;
+}
+.leftNavOne li.current{
+	background: #1ABC9C;
+	color: #fff;
+}
+.leftNavOne .leftNavOneBottom{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+.leftNavOne .leftNavOneBottom li{
+	position: relative;
+	border-bottom: 1px solid #999;
+	height: 1.5rem;
+	line-height: 0.65rem;
+	cursor: pointer;
+}
+.leftNavOne .leftNavOneBottom li:nth-child(1){
+    padding-top: 0.1rem;
+    height: 1.4rem;
+}
+.leftNavOne .leftNavOneBottom li:nth-child(3){
+	border-bottom: none;
+}
+.leftNavOne .leftNavOneBottom li img{
+	display: block;
+	margin: 0 auto;
+	width: 0.5rem;
+}
+.leftNavOne .leftNavOneBottom li:nth-child(1) img{
+	display: block;
+	margin: 0 auto;
+	width: 0.65rem;
+}
+.leftNavOne .leftNavOneBottom li:nth-child(2) img,.leftNavOne .leftNavOneBottom li:nth-child(3) img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.leftNavOne .leftNavOneBottom li:nth-child(2) span{
+	background: #f40;
+	display: inline-block;
+	font-size: 0.3rem;
+	line-height: 0.55rem;
+	width: 0.55rem;
+	border-radius: 2rem;
+	color: #fff;
+	position: absolute;
+	top: 5px;
+}
+.leftNavTwo{
+	height: 100%;
+	text-align: center;
+	background: #EAEDF1;
+	color: #75757C;
+	border-right: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.leftNavTwo .leftNavTwoTop{
+	font-size: 16px;
+	line-height: 1rem;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #F2F2F2;
+}
+.leftNavTwoList ul{
+	margin-bottom: 0;
+}
+.leftNavTwo ul li{
+	font-size: 14px;
+	line-height: 1rem;
+	border-bottom: 1px solid #ddd;
+	-webkit-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #333;
+	cursor: pointer;
+}
+.leftNavTwo ul li.currentli{
+	background: #fff;
+	color: #1ABC9C;
+}
+.leftNavTwo ul li:hover{
+	color: #1ABC9C;
+}
+/*左侧显示admin*/
+.adminLeft{
+	background: #fff;
+	width: 19%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	padding:1%;
+}
+.adminLeft .adminLeftTop{
+	overflow:hidden;
+	zoom:1;
+	font-size: 0.325rem;
+	line-height: 1rem;
+	padding: 0 3%;
+	border-bottom: 1px solid #ddd;
+}
+.adminLeft .adminLeftTop .left{
+	float: left;
+}
+.adminLeft .adminLeftTop .right{
+	float: right;
+}
+.adminLeft ul li{
+	font-size: 0.3rem;
+	line-height: 0.9rem;
+}
+/*左侧显示消息*/
+.messageLeft{
+	background: #fff;
+	width: 19%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	padding:1%;
+}
+.messageLeft p{
+	font-size: 0.325rem;
+	line-height: 0.9rem;
+	color: #666;
+	border-bottom: 1px solid #ddd;
+}
+.messageLeft ul{
+
+}
+.messageLeft ul li{
+	overflow: hidden;
+	zoom:1;
+	font-size:0.35rem;
+	line-height: 0.9rem;
+	border-bottom: 1px solid #ddd;
+}
+.messageLeft ul li:last-child{
+	border-bottom: none;
+}
+.messageLeft ul li .left{
+	float: left;
+}
+.messageLeft ul li .right{
+	float: right;
+}
+.messageLeft ul li .right i{
+	color: red;
+	font-style: normal;
+}
+.rightNavWrap{
+	height: 100%;
+}
+.rightNavWrap .rightNav{
+	height: 6.25%;
+	font-size: 0.35rem;
+	background: #F3F3F3;
+	padding-left: 2%;
+	position: relative;
+	border-bottom: 1px solid #ddd;
+}
+.rightNavWrap .rightNav i{
+	position: absolute;
+	left: 4%;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 7px;
+	height:26px;
+	background: #1ABC9C;
+}
+
+.rightNavWrap .rightNav span{
+	position: absolute;
+	left: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+	font-weight: 0.35rem;
+}
+
+.rightNavWrap .rightContent{
+	height: 93.75%;
+	overflow-y: hidden;
+}
+/*登陆样式*/
+.loginWrap .loginimg{
+	width: 130px;
+	display: block;
+	margin: 200px auto 0;
+}
+.loginWrap .shopTitle{
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
+	line-height: 60px;
+}
+.loginWrap .shopTitle.shopTitlesq{
+	margin-top: 200px;
+}
+.loginWrap .loginUser{
+	width: 280px;
+	height: 40px;
+	margin: 0 auto;
+	position: relative;
+	margin-bottom: 20px;
+}
+.loginWrap .loginUser input{
+	width: 280px;
+	border:1px solid #fff;
+	background: #99CBED;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 auto;
+	padding-left: 50px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.loginWrap .loginUser.loginyzm input{
+	width: 180px;
+}
+.loginWrap .loginUser.loginyzm span{
+	display: inline-block;
+	width: 95px;
+	line-height: 40px;
+	color: #fff;
+	background: #999999;
+	border-radius: 3px;
+	text-align: center;
+}
+.loginWrap .loginUser input::-webkit-input-placeholder{color:#fff;}
+.loginWrap .loginUser input:-moz-placeholder{color:#fff;}
+.loginWrap .loginUser input::-moz-placeholder{color:#fff;}
+.loginWrap .loginUser input:-ms-input-placeholder{color:#fff;}
+.loginWrap .loginUser i{
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background: url(../images/u15.png) no-repeat center center;
+	background-size: 50%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.loginWrap .loginUser.loginmm i{
+	display: inline-block;
+	width: 50px;
+	height: 40px;
+	background: url(../images/u17.png) no-repeat center center;
+	background-size: 40%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.loginWrap a.loginDL{
+	display: block;
+	width: 280px;
+	background: #fff;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #5CB4CA;
+	border-radius: 3px;
+	font-size: 18px;
+	margin: 0 auto;
+}
+.loginWrap .bottomBtn{
+	overflow: hidden;
+	zoom: 1;
+	line-height: 36px;
+	color: #fff;
+	width: 280px;
+	margin: 2px auto;
+}
+.loginWrap .bottomBtn .Btnleft{
+	float: left;
+	cursor: pointer;
+}
+.loginWrap .bottomBtn .Btnright{
+	float: right;
+	cursor: pointer;
+}
+.loginWrap .bottomBtn .Btnleft a{
+	display: block;
+	color: #fff;
+}
+.loginWrap .bottomBtn .Btnright a{
+	display: block;
+	color: #fff;
+}
+.fhdl{
+	display: block;
+	text-align: center;
+	font-size: 18px;
+	margin-top: 30px;
+	color: #fff;
+}
+.fhdl:hover{
+	color: #fff;
+}
+.zcsqInput{
+	width: 400px;
+	color: #fff;
+	margin: 20px auto;
+}
+.zcsqInput input{
+	display: inline-block;
+	width: 300px;
+	background: #fff;
+	border: 1px solid #E4E4E4;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 3px;
+	padding-left: 10px;
+}
+.zcsqInput select{
+	display: inline-block;
+	width: 100px;
+	background: #fff;
+	border: 1px solid #E4E4E4;
+	height: 36px;
+	color: #666;
+	line-height: 36px;
+	border-radius: 3px;
+}

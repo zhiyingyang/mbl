@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美邦来</title>
+  </head> 
+  <body>
+  <div class="row leftNavWrap">
+    <div class="row datacOneWrap">
+      <div class="row datacWrap">
+        <p class="left">
+          <span>
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+            数据列表
+          </span>
+        </p>
+        <p class="right">
+          <button class="rightBtn" aria-hidden="true" data-toggle="modal" data-target="#SKUkc">添加</button>
+        </p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>原因类型</th>
+            <th>排序</th>
+            <th>是否启用</th>
+            <th>添加时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>质量问题</td>
+            <td>1</td>
+            <td>
+              <section class="hdinput">
+                <div class="checkbox">
+                  <input type="checkbox"/>
+                  <label></label>
+                </div>
+              </section>
+            </td>
+            <td>2017-07-19 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#SKUkc">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>质量问题</td>
+            <td>1</td>
+            <td>
+              <section class="hdinput">
+                <div class="checkbox">
+                  <input type="checkbox"/>
+                  <label></label>
+                </div>
+              </section>
+            </td>
+            <td>2017-07-19 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#SKUkc">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>质量问题</td>
+            <td>1</td>
+            <td>
+              <section class="hdinput">
+                <div class="checkbox">
+                  <input type="checkbox"/>
+                  <label></label>
+                </div>
+              </section>
+            </td>
+            <td>2017-07-19 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#SKUkc">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>质量问题</td>
+            <td>1</td>
+            <td>
+              <section class="hdinput">
+                <div class="checkbox">
+                  <input type="checkbox"/>
+                  <label></label>
+                </div>
+              </section>
+            </td>
+            <td>2017-07-19 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#SKUkc">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bottomFY">
+        <div class="allQbCZ">
+          <input type="checkbox">
+          <span>全选</span>
+          <select>
+            <option>删除</option>
+          </select>
+          <button class="btn">确定</button>
+        </div>
+        <div class="fy">
+          <span class="alldata">共<i>10</i>页/<i>100</i>条数据</span>
+          <span class="numBtn"><</span>
+          <span class="numBtn">1</span>
+          <span class="numBtn">2</span>
+          <span class="numBtn">3</span>
+          <span class="numBtn">4</span>
+          <span class="numBtn">5</span>
+          <span class="numBtn">...</span>
+          <span class="numBtn">50</span>
+          <span class="numBtn">></span>
+          <span class="numInput">跳至<input type="text">页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  <!-- 添加退货原因 -->
+  <div class="modal fade" id="SKUkc" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">添加自定义打印项</h4>
+        </div>
+        <div class="modal-body tjzdy tjthyy">
+            <p><span><i>*</i>原因类型:</span><input type="text" /></p>
+            <p><span><i>*</i>排序:</span><input type="text" /></p>
+            <p>
+            	<span><i>*</i>是否启用:</span>
+            	<span class="hdinput">
+                <span class="checkbox">
+                  <input type="checkbox"/>
+                  <label></label>
+                </span>
+              </span>
+            </p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default BtnSKU" data-dismiss="modal">取消</button>
+          <button type="button" class="btn btn-primaryqd">确定</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</html>

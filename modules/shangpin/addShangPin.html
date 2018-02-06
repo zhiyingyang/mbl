@@ -1,0 +1,611 @@
+<style>
+
+</style>
+  <div class="row addSPWrap">
+    <ul class="addSPOne">
+      <li class="current"><span>1</span><span>选择商品分类</span></li>
+      <li class="NumTwo"><span>2</span><span>填写商品信息</span><i></i></li>
+      <li class="NumThree"><span>3</span><span>填写商品属性</span><i></i></li>
+    </ul>
+    <div class="addSPTwo">
+      <div class="addSPTwoChildO">
+        <span>选择分类</span>
+      </div>
+      <div class="addSPTwoChildT">
+         <p class="zjsp">您最近使用的商品分类：
+            <select>
+              <option>请选择</option>
+            </select>
+         </p>
+         <div class="selectWrap">
+            <div class="selectOne selectThree">
+             <p>选择一级分类</p>
+             <ul>
+               <li>
+                服装
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </li>
+               <li>餐厨
+                <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+               </li>
+             </ul>
+           </div>
+           <div class="selectOne selectTwo">
+             <p>选择二级分类</p>
+             <ul>
+               <li>内裤 </li>
+               <li>内衣</li>
+             </ul>
+           </div>
+         </div>
+         <p class="selectResult">您当前分别选择的商品是：<span>服装>内衣</span></p>
+         <button class="btn">下一步，填写商品信息</button>
+      </div>
+    </div>
+    <div class="addSPXX">
+      <div class="addSPXXChildO">
+        <span>基本信息</span>
+      </div>
+      <div class="addSPXXChildT">
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品分类：</span>服装>内裤 　　
+          <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
+          <button class="bianjiBtn">编辑</button>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品名称：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>副标题：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品品牌：</span>
+          <select>
+            <option>请选择</option>
+          </select>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品介绍：</span>
+          <textarea></textarea>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>运费模板：</span>
+          <select>
+            <option>请选择模板</option>
+          </select>
+        </div>
+      </div>
+      <div class="addSPXXChildO">
+        <span>库存规格</span>
+      </div>
+      <div class="addSPXXChildT">
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品货号：</span>
+          <input type="text">
+          <p class="bottomText">如果您不输入商品货号，系统将自动生成一个唯一的货号。
+          </p>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品售价：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">市场价：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品库存：</span>
+          <input type="text">
+          <p class="bottomText">该设置只对单品有效，当商品存在多规格货品时为不可编辑状态，库存数值取决于货品数量
+          </p>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">库存预警值：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">计量单位：</span>
+          <input type="text">
+        </div>
+         <div class="inputSr shangpinzl">
+          <span class="titleLeft">商品重量：</span>
+          <input type="text">
+          <select>
+            <option>克</option>
+          </select>
+        </div>
+      </div>
+      <div class="addSPXXChildO addSPXXChildT3">
+        <span>其它信息</span>
+      </div>
+      <div class="addSPXXChildT addSPXXChildT3">
+        <div class="inputSr">
+          <span class="titleLeft">预告商品：</span>
+          <section class="hdinput">
+            <div class="checkbox">
+              <input type="checkbox"/>
+              <label></label>
+            </div>
+          </section>
+          <p class="bottomText">如果设置为预告商品，商品上架和商品推荐不可用。
+          </p>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">商品上架：</span>
+          <section class="hdinput">
+            <div class="checkbox">
+              <input type="checkbox"/>
+              <label></label>
+            </div>
+          </section>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft fwbzCheck">商品推荐：</span>
+         <div class ="holder"> 
+            <input type="checkbox" id="checkboxxp" class="regular-checkbox" /><label for="checkboxxp"></label><span class="leftOne">新品</span>
+            <input type="checkbox" id="checkboxtj" class="regular-checkbox" /><label for="checkboxtj"></label><span class="leftOne">推荐</span>
+          </div>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft fwbzCheck">服务保证：</span>
+          <div class ="holder"> 
+            <input type="checkbox" id="checkboxth" class="regular-checkbox" /><label for="checkboxth"></label><span class="leftOne">无忧退货</span>
+            <input type="checkbox" id="checkboxtk" class="regular-checkbox" /><label for="checkboxtk"></label><span class="leftOne">快速退款</span>
+            <input type="checkbox" id="checkboxby" class="regular-checkbox" /><label for="checkboxby"></label><span class="leftOne">免费包邮</span>
+          </div>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">详细页标题：</span>
+          <input type="text">
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft">详细页描述：</span>
+          <input type="text">
+        </div>
+         <div class="inputSr">
+          <span class="titleLeft">商品关键词：</span>
+          <input type="text">
+          <p class="bottomText">商品关键词请用空格分隔；有两个功能，一是可以作为站内关键词查询，在前台搜索框输入关键词后，能够搜索到该商品；二是作为搜索引擎收录使用.</p>
+        </div>
+        <div class="inputSr">
+          <span class="titleLeft"><i>*</i>商品备注：</span>
+          <textarea placeholder="请输入内容"></textarea>
+        </div>
+      </div>
+      <div class="addSPXXChildO addSPXXChildT3 addSPXXChildT4">
+        <span>特殊信息</span>
+      </div>
+      <div class="addSPXXChildT addSPXXChildT3 addSPXXChildT4">
+        <div class="inputSr inputSrTs">
+          <span class="titleLeft">特惠促销：</span>
+          <div class="button-holder">
+            <input type="radio" id="radio-2-1" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-1"></label>
+            <span class="shifou shifouF">否</span>
+            <input type="radio" id="radio-2-2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio-2-2"></label>
+            <span class="shifou">是</span>
+          </div>
+          <div class="inputWrap">
+            <input class="TSprice" type="date" placeholder="选择开始时间">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            <input class="TSprice" type="date" placeholder="选择结束时间">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            <input class="TSprice" type="text" placeholder="输入促销价格">
+          </div>
+        </div>
+        <div class="inputSr inputSrTs">
+          <span class="titleLeft">商品限购：</span>
+          <div class="button-holder">
+            <input type="radio" id="wyth" name="radio-2-mfby" class="regular-radio big-radio" /><label for="wyth"></label>
+            <span class="shifou shifouF">无忧退货</span>
+            <input type="radio" id="kstk" name="radio-2-mfby" class="regular-radio big-radio" /><label for="kstk"></label>
+            <span class="shifou shifouF">快速退款</span>
+            <input type="radio" id="mfby" name="radio-2-mfby" class="regular-radio big-radio" /><label for="mfby"></label>
+            <span class="shifou">免费包邮</span>
+          </div>
+          <div class="inputWrap">
+            <input class="TSprice" type="date" placeholder="选择开始时间">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            <input class="TSprice" type="date" placeholder="选择结束时间">
+            <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+            <input class="TSprice" type="text" placeholder="输入促销价格">
+          </div>
+        </div>
+       <div class="inputSr inputSrTs">
+          <span class="titleLeft">阶梯价格：</span>
+          <div class="button-holder">
+            <input type="radio" id="jtjgO" name="jtjgO" class="regular-radio big-radio" /><label for="jtjgO"></label>
+            <span class="shifou shifouF">否</span>
+            <input type="radio" id="jtjgt" name="jtjgO" class="regular-radio big-radio" /><label for="jtjgt"></label>
+            <span class="shifou">是</span>
+          </div>
+          <div class="table">
+            <table>
+                <thead>
+                  <tr>
+                    <th>数量</th>
+                    <th>价格</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                 <tbody>
+                  <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><span>删除</span><span>增加</span></td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="inputSr inputSrTs">
+          <span class="titleLeft">满减价格：</span>
+          <div class="button-holder">
+            <input type="radio" id="mjjgO" name="mjjgO" class="regular-radio big-radio" /><label for="mjjgO"></label>
+            <span class="shifou shifouF">否</span>
+            <input type="radio" id="mjjgT" name="mjjgO" class="regular-radio big-radio" /><label for="mjjgT"></label>
+            <span class="shifou">是</span>
+          </div>
+          <div class="table">
+            <table>
+                <thead>
+                  <tr>
+                    <th>满</th>
+                    <th>立减</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                 <tbody>
+                  <tr>
+                    <td><input type="text"></td>
+                    <td><input type="text"></td>
+                    <td><span>删除</span><span>增加</span></td>
+                  </tr>
+                </tbody>
+            </table>
+          </div>
+          <div class="btnWrapdrb">
+            <button class="btn btnprevdrb">上一步，选择商品分类</button>
+            <button class="btn btnnextdrb">下一步，填写商品属性</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="addSPSX">
+      <div class="addSPSXChildO">
+        <span>商品属性</span>
+      </div>
+      <div class="addSPSXChildT">
+        <div class="inputSr">
+          <span class="titleLeft">属性类型：</span>
+          <select>
+            <option>请选择属性类别</option>
+          </select>
+        </div>
+        <div class="spgg">
+           <span class="titleLeft"><i>*</i>属性类型：</span>
+           <div class="checkboxWrap">
+              <div class ="holder">
+                <span>尺码：</span>       
+                <input type="checkbox" id="checkbox-1-1" class="regular-checkbox" /><label for="checkbox-1-1"></label><span class="leftOne">M</span>
+                <input type="checkbox" id="checkbox-1-2" class="regular-checkbox" /><label for="checkbox-1-2"></label><span class="leftOne">X</span>
+                <input type="checkbox" id="checkbox-1-3" class="regular-checkbox" /><label for="checkbox-1-3"></label><span class="leftOne">XL</span>
+                <input type="checkbox" id="checkbox-1-4" class="regular-checkbox" /><label for="checkbox-1-4"></label><span class="leftOne">2XL</span>
+                <input type="checkbox" id="checkbox-1-5" class="regular-checkbox" /><label for="checkbox-1-5"></label><span class="leftOne">3XL</span>
+                <input type="checkbox" id="checkbox-1-6" class="regular-checkbox" /><label for="checkbox-1-6"></label><span class="leftOne">4XL</span>
+              </div>
+              <div class ="holder">
+                <span>颜色：</span>   
+                <input type="checkbox" id="checkbox7" class="regular-checkbox" /><label for="checkbox7"></label><span class="leftOne">黑色</span><span class="leftTwo">删除</span>
+                <input type="checkbox" id="checkbox8" class="regular-checkbox" /><label for="checkbox8"></label><span class="leftOne">红色</span><span class="leftTwo">删除</span>
+                <input type="checkbox" id="checkbox9" class="regular-checkbox" /><label for="checkbox9"></label><span class="leftOne">白色</span><span class="leftTwo">删除</span>
+                <input type="checkbox" id="checkbox10" class="regular-checkbox" /><label for="checkbox10"></label><span class="leftOne">粉色</span><span class="leftTwo">删除</span>
+                <div class="addInput">
+                  <input type="text"><button>增加</button>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div class="cmTable">
+           <table>
+             <thead>
+               <tr>
+                 <th>尺码</th>
+                 <th>颜色</th>
+                 <th><i>*</i>销售价格</th>
+                 <th><i>*</i>商品库存</th>
+                 <th><i>*</i>库存预警值</th>
+                 <th>SKU编号</th>
+                 <th>操作</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td>M</td>
+                 <td>黑色</td>
+                 <td><input type="text"></td>
+                 <td><input type="text"></td>
+                 <td><input type="text"></td>
+                 <td><input type="text"></td>
+                 <td class="del">删除</td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+      </div>
+      <div class="addSPSXChildO addSPSXChildOcs">
+        <span>商品参数</span>
+      </div>
+      <div class="addSPSXChildT addSPSXChildTcs">
+        <div class="cmTable">
+           <table>
+             <thead>
+               <tr>
+                 <th>参数类型</th>
+                 <th>录入参数</th>
+               </tr>
+             </thead>
+             <tbody>
+               <tr>
+                 <td><i>*</i>上市年份</td>
+                 <td>
+                   <select>
+                     <option>请选择</option>
+                   </select>
+                 </td>
+               </tr>
+               <tr>
+                 <td><i>*</i>主材含量</td>
+                 <td><input type="text"></td>
+               </tr>
+               <tr>
+                 <td>适用对象</td>
+                 <td><input type="text"></td>
+               </tr>
+             </tbody>
+           </table>
+        </div>
+      </div>
+      <div class="addSPSXChildO addSPSXChildOcs">
+        <span>商品相册</span>
+      </div>
+      <div class="addSPSXChildT addSPSXChildTcs">
+          <div class="img_div">
+					</div>
+					<a href="javascript:;" class="a-upload">
+						<input type="file" name="myFile" id="myFile" multiple="multiple" />上传图片
+					</a>
+					<div class="shade" onclick="javascript:closeShade()">
+						<div class="">
+							<span class="text_span">
+							</span>
+						</div>
+					</div>
+					<div class="shadeImg" onclick="javascript:closeShadeImg()">
+						<div class="">
+							<img class="showImg" src=""/>
+						</div>
+					</div>
+      </div>
+      <div class="addSPSXChildO addSPSXChildOcs addSPSXChildOcsfwb">
+        <span>规格参数</span>
+      </div>
+      <div class="addSPSXChildT addSPSXChildTcs addSPSXChildOcsfwb">
+		    <div class="container">
+		        <div id="editor-trigger">
+		            <p>请输入内容...</p>
+		        </div>
+		    </div>
+        <div class="btnWrapdrbThree">
+          <button class="btn btnprevdrbThree">上一步，填写商品信息</button>
+          <button class="btn btnnextdrbThree">完成，提交商品</button><br>
+          <button class="btn btncgxThree">保存至草稿箱并退出编辑</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<script type="text/javascript">
+$(".selectThree li").click(function () {
+	$(".selectTwo").show(150);
+	$(this).addClass("current").siblings(".selectThree li").removeClass("current");
+})
+$(".selectTwo li").click(function () {
+	$(this).addClass("current").siblings(".selectTwo li").removeClass("current");
+})
+$(".addSPTwoChildT .btn").click(function(){
+	$(".addSPTwo").hide();
+	$(".addSPXX").show();
+	$(".addSPSX").hide();
+	$(".NumTwo").addClass("current");
+})
+$(".bianjiBtn,.btnprevdrb").click(function(){
+	$(".addSPTwo").show();
+	$(".addSPXX").hide();
+	$(".addSPSX").hide();
+	$(".NumTwo").removeClass("current");
+})
+$(".btnnextdrb").click(function(){
+	$(".addSPTwo").hide();
+	$(".addSPXX").hide();
+	$(".addSPSX").show();
+	$(".NumThree").addClass("current");
+})
+$(".btnprevdrb,.spbj").click(function(){
+	$(".addSPTwo").show();
+	$(".addSPXX").hide();
+	$(".addSPSX").hide();
+	$(".NumThree").removeClass("current");
+})
+$(".btnprevdrbThree").click(function(){
+	$(".addSPTwo").hide();
+	$(".addSPXX").show();
+	$(".addSPSX").hide();
+	$(".NumThree").removeClass("current");
+})
+$(function() {
+				var objUrl;
+				var img_html;
+				$("#myFile").change(function() {
+		var img_div = $(".img_div");
+		var filepath = $("input[name='myFile']").val();
+		for(var i = 0; i < this.files.length; i++) {
+			objUrl = getObjectURL(this.files[i]);
+			var extStart = filepath.lastIndexOf(".");
+			var ext = filepath.substring(extStart, filepath.length).toUpperCase();
+			/*
+			 作者：z@qq.com
+        	时间：2016-12-10
+        	描述：鉴定每个图片上传尾椎限制
+	 		* */
+			if(ext != ".BMP" && ext != ".PNG" && ext != ".GIF" && ext != ".JPG" && ext != ".JPEG") {
+				$(".shade").fadeIn(500);
+				$(".text_span").text("图片限于bmp,png,gif,jpeg,jpg格式");
+				this.value = "";
+				$(".img_div").html("");
+				return false;
+			} else {
+				/*
+				 若规则全部通过则在此提交url到后台数据库
+				 * */
+				img_html = "<div class='isImg'><img src='" + objUrl + "' onclick='javascript:lookBigImg(this)' style='height: 100%; width: 100%;' /><button class='removeBtn' onclick='javascript:removeImg(this)'>x</button></div>";
+				img_div.append(img_html);
+			}
+		}
+		/*
+		 作者：z@qq.com
+    	时间：2016-12-10
+    	描述：鉴定每个图片大小总和
+	 	* */
+		var file_size = 0;
+		var all_size = 0;
+		for(j = 0; j < this.files.length; j++) {
+			file_size = this.files[j].size;
+			all_size = all_size + this.files[j].size;
+			var size = all_size / 1024;
+			if(size > 500) {
+				$(".shade").fadeIn(500);
+				$(".text_span").text("上传的图片大小不能超过100k！");
+				this.value = "";
+				$(".img_div").html("");
+				return false;
+			}
+		}
+		/*
+		 作者：z@qq.com
+    	时间：2016-12-10
+    	描述：鉴定每个图片宽高 以后会做优化 多个图片的宽高 暂时隐藏掉 想看效果可以取消注释就行
+	 	* */
+		//					var img = new Image();
+		//					img.src = objUrl;
+		//					img.onload = function() {
+		//						if (img.width > 100 && img.height > 100) {
+		//							alert("图片宽高不能大于一百");
+		//							$("#myFile").val("");
+		//							$(".img_div").html("");
+		//							return false;
+		//						}
+		//					}
+		return true;
+	});
+	/*
+	 作者：z@qq.com
+	时间：2016-12-10
+	描述：鉴定每个浏览器上传图片url 目前没有合并到Ie
+	 * */
+	function getObjectURL(file) {
+		var url = null;
+		if(window.createObjectURL != undefined) { // basic
+			url = window.createObjectURL(file);
+		} else if(window.URL != undefined) { // mozilla(firefox)
+			url = window.URL.createObjectURL(file);
+		} else if(window.webkitURL != undefined) { // webkit or chrome
+			url = window.webkitURL.createObjectURL(file);
+		}
+		//console.log(url);
+		return url;
+	}
+});
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带删除 再次地方可以加上一个ajax进行提交到后台进行删除
+ * */
+function removeImg(r){
+	$(r).parent().remove();
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：上传图片附带放大查看处理
+ * */
+function lookBigImg(b){
+	$(".shadeImg").fadeIn(500);
+	$(".showImg").attr("src",$(b).attr("src"))
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShade(){
+	$(".shade").fadeOut(500);
+}
+/*
+ 作者：z@qq.com
+ 时间：2016-12-10
+  描述：关闭弹出层
+ * */
+function closeShadeImg(){
+	$(".shadeImg").fadeOut(500);
+}
+			
+   // 阻止输出log
+// wangEditor.config.printLog = false;
+
+var editor = new wangEditor('editor-trigger');
+
+// 上传图片
+editor.config.uploadImgUrl = '/upload';
+
+// 跨域上传
+// editor.config.uploadImgUrl = 'http://localhost:8012/upload';
+
+// 第三方上传
+// editor.config.customUpload = true;
+
+// editor.config.menus = [
+//     'img',
+//     'insertcode',
+//     'eraser',
+//     'fullscreen'
+// ];
+
+// onchange 事件
+// editor.onchange = function () {
+//     console.log(this.$txt.html());
+// };
+
+// 取消过滤js
+// editor.config.jsFilter = false;
+
+// 取消粘贴过来
+// editor.config.pasteFilter = false;
+
+// 设置 z-index
+// editor.config.zindex = 20000;
+
+// 语言
+// editor.config.lang = wangEditor.langs['en'];
+
+// 自定义菜单UI
+// editor.UI.menus.bold = {
+//     normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+//     selected: '.selected'
+// };
+// editor.UI.menus.italic = {
+//     normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+//     selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+// };
+editor.create();
+</script>

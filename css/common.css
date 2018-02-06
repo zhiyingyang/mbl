@@ -1,0 +1,486 @@
+body{
+	background: #F9F9F9;
+}
+.glyphicon-heart,.glyphicon-heart-empty{
+	color: red;
+}
+.row {
+    margin-right: 0; 
+    margin-left: 0; 
+    
+}
+p {
+     margin: 0; 
+}
+.leftNavWrap{
+	padding:0 3%;
+	height: 100%;
+	overflow-y: auto;
+	background: #F9F9F9;
+}
+.leftNavWrap.printInvoice{
+	padding: 0 5%;
+}
+.printInvoice .datacWrap .left{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+}
+.printInvoice .datacWrap .left span{
+	width: 100%;
+	text-align: center;
+	display: inline-block;
+	font-size: 22px;
+	color: #666;
+	font-weight: bold;
+	line-height: 80px;
+}
+.printInvoice .listPro{
+	text-align: right;
+	border: 1px solid #E4E4E4;
+	border-top: none;
+	padding-right: 10px;
+}
+.printInvoice .ordrNumdy{
+	border: 1px solid #E4E4E4;
+	border-top: none;
+	padding: 10px 0 15px 30px;
+	line-height: 36px;
+	position: relative;
+}
+.printInvoice .ordrNumdy span{
+	display: inline-block;
+	width: 270px;
+}
+.printInvoice .ordrNumdy img{
+	position: absolute;
+	top: 50px;
+	right: 20px;
+	height: 46px;
+}
+.printInvoice .datacOneWrap table tbody tr td{
+	padding: 12px 0;
+}
+.printInvoice .listPro span{
+	display: inline-block;
+	margin-right: 20px;
+}
+.printInvoiceTop{
+	background: #F3F3F3;
+	border-bottom: 1px solid #E4E4E4;
+	line-height: 46px;
+	padding: 2px 15%;
+	position: relative;
+}
+.printInvoiceTop span{
+	display: inline-block;
+}
+.printInvoiceTop span i{
+    display: inline-block;
+    width: 7px;
+    height: 26px;
+    vertical-align: -8px;
+    background: #1ABC9C;
+    margin-right: 6px;
+}
+.btnNavWrap{
+	padding:2% 0 0;
+}
+.btn{
+	background: #fff;
+	border:1px solid #ddd;
+}
+.btnHover{
+	margin-right: 1.5%;
+}
+.btn span{
+	color: red;
+}
+.btn.current {
+    color: #fff;
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    border:1px solid #1ABC9C;
+}
+.btn.current span{
+	color: #fff;
+}
+.btnHover:hover {
+	color: #fff;
+    background-color: #1ABC9C;
+    border-color: #1ABC9C;
+    border:1px solid #1ABC9C;
+}
+.btn:hover span{
+	color: #fff;
+}
+.searcOneWrap{
+	border: 1px solid #ddd;
+	line-height: 1.1rem;
+	font-size: 14px;
+	margin-top: 2%;
+}
+.searcWrap{
+	padding:0 1%;
+	background: #F3F3F3;
+	border-bottom: 1px solid #ddd;
+	overflow:hidden;
+	zoom:1;
+}
+.searcWrap .left{
+	float: left;
+}
+.searcWrap .right{
+	float: right;
+	width: auto;
+}
+.searcWrap .right span{
+	display: inline-block;
+}
+.searcInputWrap{
+	padding:0 1%;
+	background: #fff;
+}
+.searcInputWrap span{
+	margin-right: 2%;
+	position: relative;
+}
+.searcInputWrap input{
+	border: 1px solid #ddd;
+	line-height: 0.8rem;
+	padding-left: 3px;
+	width: 4rem;
+}
+.searcInputWrap select{
+	border: 1px solid #ddd;
+	height: 0.8rem;
+	padding-left: 3px;
+	width: 3.5rem;
+	color: #999;
+	font-size: 14px;
+}
+.datacOneWrap{
+	line-height: 1.1rem;
+	font-size: 14px;
+	margin-top: 20px;
+}
+.datacWrap{
+	border: 1px solid #ddd;
+	border-bottom: none;
+	padding:0 1%;
+	background: #F3F3F3;
+	overflow:hidden;
+	zoom:1;
+	
+}
+.datacWrap .left{
+	float: left;
+	
+}
+.datacWrap .right{
+	float: right;
+	
+}
+.datacWrap .right .rightBtn{
+	height: 0.75rem;
+	display: inline-block;
+	color: #999;
+	text-align: center;
+	padding: 0 15px;
+	line-height: 0.75rem;
+	background: #fff;
+	border: 1px solid #999;
+}
+.datacWrap .right select{
+	height: 0.75rem;
+	color: #999;
+}
+.datacOneWrap table{
+	width: 100%;
+	font-size: 14px;
+	line-height: 18px;
+}
+.datacOneWrap table{
+	border-top: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+.datacOneWrap table thead tr th{
+	text-align: center;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	padding:5px 0;
+	line-height: 22px;
+	font-size: 14px;
+	background: #F9FAFC;
+}
+.datacOneWrap table tbody tr td{
+	text-align: center;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	position: relative;
+	padding: 8px 0;
+	line-height: 22px;
+	background: #fff;
+}
+.datacOneWrap table tbody tr td input{
+	width: 70%;
+	background: none;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 26px;
+}
+.datacOneWrap table tbody tr td select{
+	width: 70%;
+	margin-left: 15%;
+	background: none;
+	border: 1px solid #ddd;
+	text-align: center;
+	line-height: 26px;
+	height: 26px;
+	display: block;
+}
+.datacOneWrap table tbody tr td.bianji{
+	font-size: 26px;
+	color: #1ABC9C;
+	cursor: pointer;
+}
+.datacOneWrap table tbody tr td.chaozhuo{
+	color: #1ABC9C;
+}
+.datacOneWrap table tbody tr td .shxq{
+	color: #1ABC9C;
+	cursor: pointer;
+}
+.datacOneWrap table tbody tr td span{
+	display: inline-block;
+	margin-left: 4px;
+}
+.datacOneWrap table tbody tr td.chaozhuo span{
+	display: inline-block;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.datacOneWrap table tbody tr td div{
+    position: relative;
+    margin-bottom: 3px;
+}
+.datacOneWrap table tbody tr td .sj{
+	
+}
+.datacOneWrap table tbody tr td img{
+	width: 66px;
+}
+/*滑动按钮*/
+.datacOneWrap table tbody tr td div.hdinputWrap{
+	height: 30px;
+	margin-bottom: 0;
+}
+.datacOneWrap table tbody tr td div.hdinputWrapList{
+	height: auto;
+	margin-bottom: 3px;
+}
+.hdinput .checkbox label:after {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 100%;
+    left: 0;
+    top: -5px;
+    z-index: 2;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.hdinput .checkbox label {
+  background: #fff;
+  border: 1px solid #eee;
+  height: 28px;
+}
+.hdinput .checkbox label:after {
+  background: #bbb;
+  top: 3px;
+  left: 5px;
+  width: 22px;
+  height: 22px;
+}
+.hdinput .checkbox input:checked + label:after {
+  background: #1ABC9C;
+  left: 31px;
+}
+.hdinput .checkbox label:after {
+    background: #bbb;
+    top: 3px;
+    left: 5px;
+    width: 22px;
+    height: 22px;
+}
+.hdinput {
+    display: inline-block;
+    width: 60px;
+    height: 36px;
+    position: relative;
+}
+.hdinput .checkbox {
+    position: relative;
+    display: inline-block;
+    margin-top: 0;
+     margin-bottom:0; 
+}
+.hdinput .checkbox input {
+    position: absolute;
+    left:0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+.hdinput input[type="checkbox"],.hdinput input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.hdinput .checkbox label {
+	background: #fff;
+    border: 1px solid #eee;
+    height: 30px;
+    width: 60px;
+    position: relative;
+    display: inline-block;
+    border-radius: 26px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+/*input按钮RADIO*/
+.button-holder{
+	display: inline-block;
+}
+.button-holder .regular-radio {
+	display: none;
+}
+.button-holder .regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+}
+.button-holder .regular-radio:checked + label:after {
+	content: '\2714';
+	width: 12px;
+	height: 12px;
+	border-radius: 50px;
+	position: absolute;
+	top: 3px;
+	background: #1ABC9C;
+	border: 1px solid #1ABC9C;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+	text-shadow: 0px;
+	left: 3px;
+	font-size: 32px;
+	color: transparent;
+}
+.button-holder .regular-radio:checked + label {
+	background-color: #e9ecee;
+	color: #99a1a7;
+	border: 1px solid #1ABC9C;
+}
+.button-holder .regular-radio:checked + span {
+	color: #1ABC9C;
+}
+.button-holder .big-radio:checked + label:after {
+	width: 12px;
+    height: 12px;
+    left: 3px;
+    top: 3px;
+}
+/*input按钮check*/
+.checkboxWrap{
+	
+}
+.fwbzCheck{
+	vertical-align: 6px;
+}
+.inputSr .holder{    
+	display: inline-block;
+	width: auto;
+}
+.holder span{
+	display: inline-block;
+	line-height: 20px;
+	vertical-align: 5px;
+}
+.holder span.leftOne{
+	margin-right: 10px;
+	margin-left: 5px;
+}
+.holder span.leftTwo{
+	color: #1ABC9C;
+	margin-right: 10px;
+}
+.holder {
+	width: 100%;
+	margin-top: 10px;
+
+}
+.holder > div {
+	clear: both;
+	padding: 2%;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #eee;
+	float: left;
+	width: 96%;
+}
+.holder label {
+	display: inline;
+}
+.holder .regular-checkbox {
+	display: none;
+}
+.holder .regular-checkbox + label {
+	background-color: #fafafa;
+	border: 1px solid #cacece;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+	padding: 9px;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+}
+.holder .regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+.holder .regular-checkbox:checked + label {
+	background-color: #fff;
+	border: 1px solid #1ABC9C;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;
+}
+.holder .regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #1ABC9C;
+}
+.holder .big-checkbox + label {
+	padding: 18px;
+}
+.holder .big-checkbox:checked + label:after {
+	font-size: 28px;
+	left: 6px;
+}
+.searcInputWrap .glyphicon{
+   position: absolute;
+   background: #fff;
+   line-height: 34px;
+   top: -9px;
+   right: 2px;
+   pointer-events:none;
+}

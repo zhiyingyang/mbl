@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美邦来</title>
+  </head> 
+  <body>
+  <div class="row leftNavWrap">
+    <div class="row searcOneWrap">
+      <div class="searcWrap">
+        <p class="left">
+          <span>
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            筛选查询
+          </span>
+        </p>
+      </div>
+      <div class="searcInputWrap">
+        <span>招聘地区：
+          <select>
+            <option>全部</option>
+          </select>
+        </span>
+        <span>招聘岗位：
+          <select>
+            <option>请选择品牌</option>
+          </select>
+        </span>
+        <span>排序方式：
+          <select>
+            <option>默认</option>
+          </select>
+        </span>
+      </div>
+    </div>
+    <div class="row datacOneWrap">
+      <div class="row datacWrap">
+        <p class="left">
+          <span>
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+            数据列表
+          </span>
+        </p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>招聘职位</th>
+            <th>招聘地区</th>
+            <th>招聘岗位</th>
+            <th>学历要求</th>
+            <th>发布时间</th>
+            <th>审核状态</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>10001</td>
+            <td>XXXXXXXXXXX</td>
+            <td>广东</td>
+            <td>XXX销售</td>
+            <td>大专</td>
+            <td>2017-08-08</td>
+            <td>
+              <p>已审核</p>
+              <p class="shxq" data-toggle="modal" data-target="#shenhexq">审核详情</p>
+            </td>
+            <td class="chaozhuo">
+              <span ui-sref="zpfb" ui-sref-active="zpfb">查看</span>
+              <span ui-sref="zpfb" ui-sref-active="zpfb">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>XXXXXXXXXXX</td>
+            <td>广东</td>
+            <td>XXX销售</td>
+            <td>大专</td>
+            <td>2017-08-08</td>
+            <td>
+              <p>已审核</p>
+              <p class="shxq" data-toggle="modal" data-target="#shenhexq">审核详情</p>
+            </td>
+            <td class="chaozhuo">
+              <span ui-sref="zpfb" ui-sref-active="zpfb">查看</span>
+              <span ui-sref="zpfb" ui-sref-active="zpfb">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>XXXXXXXXXXX</td>
+            <td>广东</td>
+            <td>XXX销售</td>
+            <td>大专</td>
+            <td>2017-08-08</td>
+            <td>
+              <p>已审核</p>
+              <p class="shxq" data-toggle="modal" data-target="#shenhexq">审核详情</p>
+            </td>
+            <td class="chaozhuo">
+              <span ui-sref="zpfb" ui-sref-active="zpfb">查看</span>
+              <span ui-sref="zpfb" ui-sref-active="zpfb">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>XXXXXXXXXXX</td>
+            <td>广东</td>
+            <td>XXX销售</td>
+            <td>大专</td>
+            <td>2017-08-08</td>
+            <td>
+              <p>已审核</p>
+              <p class="shxq" data-toggle="modal" data-target="#shenhexq">审核详情</p>
+            </td>
+            <td class="chaozhuo">
+              <span ui-sref="zpfb" ui-sref-active="zpfb">查看</span>
+              <span ui-sref="zpfb" ui-sref-active="zpfb">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+          <tr>
+            <td>10001</td>
+            <td>XXXXXXXXXXX</td>
+            <td>广东</td>
+            <td>XXX销售</td>
+            <td>大专</td>
+            <td>2017-08-08</td>
+            <td>
+              <p>已审核</p>
+              <p class="shxq" data-toggle="modal" data-target="#shenhexq">审核详情</p>
+            </td>
+            <td class="chaozhuo">
+              <span ui-sref="zpfb" ui-sref-active="zpfb">查看</span>
+              <span ui-sref="zpfb" ui-sref-active="zpfb">编辑</span>
+              <span>删除</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bottomFY">
+        <div class="fy">
+          <span class="alldata">共<i>10</i>页/<i>100</i>条数据</span>
+          <span class="numBtn"><</span>
+          <span class="numBtn">1</span>
+          <span class="numBtn">2</span>
+          <span class="numBtn">3</span>
+          <span class="numBtn">4</span>
+          <span class="numBtn">5</span>
+          <span class="numBtn">...</span>
+          <span class="numBtn">50</span>
+          <span class="numBtn">></span>
+          <span class="numInput">跳至<input type="text">页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- 审核详情 -->
+  <div class="modal fade" id="shenhexq" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">审核详情</h4>
+        </div>
+        <div class="modal-body">
+          <table class="modal-bodySKUTwo">
+            <thead>
+              <tr>
+                <th>审核时间</th>
+                <th>审核人员</th>
+                <th>审核结果</th>
+                <th>反馈详情</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2017-07-07 16:58:11</td>
+                <td>admin</td>
+                <td>审核通过</td>
+                <td>无</td>
+              </tr>
+              <tr>
+                <td>2017-07-07 16:58:11</td>
+                <td>admin</td>
+                <td>未通过</td>
+                <td>内容不当，请检查内容。</td>
+              </tr>
+              <tr>
+                <td>2017-07-07 16:58:11</td>
+                <td>admin</td>
+                <td>未通过</td>
+                <td>内容不当，请检查内容。</td>
+              </tr>
+              <tr>
+                <td>2017-07-07 16:58:11</td>
+                <td>admin</td>
+                <td>未通过</td>
+                <td>内容不当，请检查内容。</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

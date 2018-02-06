@@ -1,0 +1,107 @@
+<div class="row leftNavWrap">
+	<button class="infomationBack" ui-sref="infomationBackBtn" ui-sref-active="infomationBackBtn">返回</button>
+	<button class="infomationBackbc" ui-sref="infomationBackBtnfh" ui-sref-active="infomationBackBtnfh">保存并返回</button>
+	<div class="inforDelivery">
+		<p><span>信息标题：</span><input type="text" /></p>
+		<p>
+			<span>信息版块：</span>
+			<select>
+				<option>请选择版块</option>
+			</select>
+		</p>
+		<p>
+			<span>信息分类：</span>
+			<select>
+				<option>请选择分类</option>
+			</select>
+		</p>
+		<p>
+			<span>信息标签：</span>
+			<span class="bqlist">
+				<i>热门标签<img src="../images/u1304.png"></i>
+				<i>热门标签<img src="../images/u1304.png"></i>
+				<i>热门标签<img src="../images/u1304.png"></i>
+				<i>热门标签<img src="../images/u1304.png"></i>
+			</span>
+			<span class="addbq">
+				<input type="text" placeholder="请输入标签"/>
+				<button>新增标签</button>
+			</span>
+		</p>
+		<p>
+			<span>有效期：</span>
+			<span class="timedate">
+			  <input class="TSprice" type="date" placeholder="请选择时间">
+	          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+	        </span>
+	        <span class="timedate">
+			  <input class="TSprice" type="date" placeholder="请选择时间">
+	          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+	        </span>
+		</p>
+		<p class="inforfb">
+			<span>信息发布：</span>
+		</p>
+		<div class="container">
+	        <div id="editor-trigger">
+	            <p>请输入内容...</p>
+	        </div>
+	    <div>
+		<div class="button-holder">
+            <input type="checkbox" id="radio2" name="radio-2-set" class="regular-radio big-radio" /><label for="radio2"></label>
+            <span class="shifou shifouF">我同意平台的<用户协议>和<隐私协议></span>
+       </div>
+		<p class="dqfbfy">当前信息发布所需费用为：￥1234.00</p>
+		<button class="informationFb">发布</button>
+	</div>
+</div>
+<script>
+   // 阻止输出log
+// wangEditor.config.printLog = false;
+
+var editor = new wangEditor('editor-trigger');
+
+// 上传图片
+editor.config.uploadImgUrl = '/upload';
+
+// 跨域上传
+// editor.config.uploadImgUrl = 'http://localhost:8012/upload';
+
+// 第三方上传
+// editor.config.customUpload = true;
+
+// editor.config.menus = [
+//     'img',
+//     'insertcode',
+//     'eraser',
+//     'fullscreen'
+// ];
+
+// onchange 事件
+// editor.onchange = function () {
+//     console.log(this.$txt.html());
+// };
+
+// 取消过滤js
+// editor.config.jsFilter = false;
+
+// 取消粘贴过来
+// editor.config.pasteFilter = false;
+
+// 设置 z-index
+// editor.config.zindex = 20000;
+
+// 语言
+// editor.config.lang = wangEditor.langs['en'];
+
+// 自定义菜单UI
+// editor.UI.menus.bold = {
+//     normal: '<button style="font-size:20px; margin-top:5px;">B</button>',
+//     selected: '.selected'
+// };
+// editor.UI.menus.italic = {
+//     normal: '<button style="font-size:20px; margin-top:5px;">I</button>',
+//     selected: '<button style="font-size:20px; margin-top:5px;"><i>I</i></button>'
+// };
+editor.create();
+</script>

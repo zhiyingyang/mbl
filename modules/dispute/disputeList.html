@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美邦来</title>
+  </head> 
+  <body>
+  <div class="row leftNavWrap">
+    <div class="row btnNavWrap">
+      <button type="button" class="btn btnHover current">全部纠纷(<span>1000</span>)</button>
+      <button type="button" class="btn btnHover">待处理(<span>1000</span>)</button>
+      <button type="button" class="btn btnHover">处理中(<span>1000</span>)</button>
+      <button type="button" class="btn btnHover">处理完毕(<span>1000</span>)</button>
+      <button type="button" class="btn btnHover">拒绝处理(<span>1000</span>)</button>
+    </div>
+    <div class="row searcOneWrap">
+      <div class="searcWrap">
+        <p class="left">
+          <span>
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+            筛选查询
+          </span>
+        </p>
+        <p class="right">
+          <span class="glyphicon glyphicon-menu-up" aria-hidden="true"></span>
+          <span>收起筛选</span>
+          <button class="btn btn-default" type="button">查询结果</button>
+        </p>
+      </div>
+      <div class="searcInputWrap">
+        <span>输入搜索：<input type="text" placeholder="服务单号"></span>
+        <span>收货人：<input type="text" placeholder="收货人姓名/手机号码"></span>
+        <span>申请时间：<input class="TSprice" type="date" placeholder="请选择时间">
+          <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+        </span>
+      </div>
+    </div>
+    <div class="row datacOneWrap">
+      <div class="row datacWrap">
+        <p class="left">
+          <span>
+            <span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+            数据列表
+          </span>
+        </p>
+        <p class="right">
+          <button class="rightBtn">导出数据</button>
+          <select>
+            <option>显示条数</option>
+            <option>5</option>
+            <option>10</option>
+            <option>15</option>
+          </select>
+          <select>
+            <option>排序方式</option>
+          </select>
+        </p>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th><input type="checkbox"></th>
+            <th>投诉单号</th>
+            <th>投诉时间</th>
+            <th>用户账号</th>
+            <th>投诉原因</th>
+            <th>联系人</th>
+            <th>处理状态</th>
+            <th>处理时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>313860326</td>
+            <td>2017-07-19 14:48:38 </td>
+            <td>18000000000</td>
+            <td>XXXXXX</td>
+            <td>XX</td>
+            <td>待处理</td>
+            <td>N/A</td>
+            <td class="chaozhuo">
+              <span>处理</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>313860326</td>
+            <td>2017-07-19 14:48:38 </td>
+            <td>18000000000</td>
+            <td>XXXXXX</td>
+            <td>XX</td>
+            <td>处理中</td>
+            <td>2017-08-08 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#ckxqDispute">查看详情</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>313860326</td>
+            <td>2017-07-19 14:48:38 </td>
+            <td>18000000000</td>
+            <td>XXXXXX</td>
+            <td>XX</td>
+            <td>处理完毕</td>
+            <td>2017-08-08 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#ckxqDispute">查看详情</span>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox"></td>
+            <td>313860326</td>
+            <td>2017-07-19 14:48:38 </td>
+            <td>18000000000</td>
+            <td>XXXXXX</td>
+            <td>XX</td>
+            <td>拒绝处理</td>
+            <td>2017-08-08 14:48:38 </td>
+            <td class="chaozhuo">
+              <span aria-hidden="true" data-toggle="modal" data-target="#ckxqDispute">查看详情</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="bottomFY">
+        <div class="allQbCZ">
+          <input type="checkbox">
+          <span>全选</span>
+          <select>
+            <option>删除</option>
+          </select>
+          <button class="btn">确定</button>
+        </div>
+        <div class="fy">
+          <span class="alldata">共<i>10</i>页/<i>100</i>条数据</span>
+          <span class="numBtn"><</span>
+          <span class="numBtn">1</span>
+          <span class="numBtn">2</span>
+          <span class="numBtn">3</span>
+          <span class="numBtn">4</span>
+          <span class="numBtn">5</span>
+          <span class="numBtn">...</span>
+          <span class="numBtn">50</span>
+          <span class="numBtn">></span>
+          <span class="numInput">跳至<input type="text">页</span>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- SKU库存 -->
+<div class="modal fade" id="ckxqDispute" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	<div class="modal-dialog" role="document">
+	  <div class="modal-content">
+	    <div class="modal-header">
+	      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	        <span aria-hidden="true">&times;</span>
+	      </button>
+	      <h4 class="modal-title" id="myModalLabel">纠纷详情</h4>
+	    </div>
+	    <div class="modal-body">
+	      <p>投诉单号：　255874456</p>
+	      <p>投诉时间：　2017-09-09　16:16:16</p>
+	      <p>用户账号：　xxxxxxxxxxxxx</p>
+	      <p>投诉原因：　xxxxxxxxxxxxx</p>
+	      <p>　投诉人：　xxxxxxxxxxxxx</p>
+	    </div>
+	    <div class="modal-footer">
+	      <button type="button" class="btn btn-default BtnSKU" data-dismiss="modal">确定</button>
+	    </div>
+	  </div>
+	</div>
+</div>
+  </body>
+</html>
